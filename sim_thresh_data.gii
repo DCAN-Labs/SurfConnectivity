@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GIFTI SYSTEM "http://www.nitrc.org/frs/download.php/115/gifti.dtd">
+<GIFTI Version="1.0"  NumberOfDataArrays="1">
+   <MetaData>
+      <MD>
+         <Name><![CDATA[AnatomicalStructurePrimary]]></Name>
+         <Value><![CDATA[CortexLeft]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[ParentProvenance]]></Name>
+         <Value><![CDATA[11343-2_FNL_preproc_Atlas_SMOOTHED_2.55.dtseries.nii_5_minutes_of_data_at_FD_0.2.dconn.nii_to_Merged_HCP_best80_dtseries.conc_AVG.dconn.nii.dscalar.nii: /usr/local/bin/wb_command -cifti-pairwise-correlation Merged_HCP_best80_dtseries.conc_AVG.dconn.nii /mnt/max/shared/data/study/ADHD/HCP/processed/ADHD_NoFMNoT2/11343-2/20130309-SIEMENS-Nagel_K-Study/HCP_release_20161027/11343-2/MNINonLinear/Results/11343-2_FNL_preproc_Atlas_SMOOTHED_2.55.dtseries.nii_5_minutes_of_data_at_FD_0.2.dconn.nii /mnt/max/shared/data/study/ADHD/HCP/processed/ADHD_NoFMNoT2/11343-2/20130309-SIEMENS-Nagel_K-Study/HCP_release_20161027/11343-2/MNINonLinear/Results/11343-2_FNL_preproc_Atlas_SMOOTHED_2.55.dtseries.nii_5_minutes_of_data_at_FD_0.2.dconn.nii_to_Merged_HCP_best80_dtseries.conc_AVG.dconn.nii.dscalar.nii ]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[ProgramProvenance]]></Name>
+         <Value><![CDATA[Connectome Workbench Type: Command Line Application Version: 1.3.0 Qt Compiled Version: 5.7.0 Qt Runtime Version: 5.7.0 Commit: 3a9c975177525cd409952466381533c4cf0683b7 Commit Date: 2018-05-07 15:08:22 -0500 Compiled with OpenMP: YES Compiler: g++ (/home/caret/gcc/install/gcc-4.8.5/bin) Compiler Version: 4.8.5 Compiled Debug: NO Operating System: Linux ]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[Provenance]]></Name>
+         <Value><![CDATA[/mnt/max/software/workbench/bin_linux64/../exe_linux64/wb_command -cifti-separate 11343-2_FNL_preproc_Atlas_SMOOTHED_2.55.dtseries.nii_5_minutes_of_data_at_FD_0.2.dconn.nii_to_Merged_HCP_best80_dtseries.conc_AVG.dconn.nii.dscalar.nii COLUMN -metric CORTEX_LEFT 11343-2_FNL_preproc_Atlas_SMOOTHED_2.55.dtseries.nii_5_minutes_of_data_at_FD_0.2.dconn.nii_to_Merged_HCP_best80_dtseries.conc_AVG.dconn.nii.L.func.gii]]></Value>
+      </MD>
+      <MD>
+         <Name><![CDATA[WorkingDirectory]]></Name>
+         <Value><![CDATA[/mnt/max/shared/data/study/ADHD/HCP/processed/ADHD_NoFMNoT2/11343-2/20130309-SIEMENS-Nagel_K-Study/HCP_release_20161027/11343-2/MNINonLinear/Results]]></Value>
+      </MD>
+   </MetaData>
+   <LabelTable>
+      <Label Key="0" Red="1.000000" Green="1.000000" Blue="1.000000" Alpha="0.000000"><![CDATA[???]]></Label>
+   </LabelTable>
+   <DataArray  ArrayIndexingOrder="ColumnMajorOrder"
+               DataType="NIFTI_TYPE_FLOAT32"
+               Dim0="32492"
+               Dimensionality="1"
+               Encoding="ExternalFileBinary"
+               Endian="LittleEndian"
+               ExternalFileName="sim_thresh_data.dat"
+               ExternalFileOffset="0"
+               Intent="NIFTI_INTENT_NORMAL">
+      <MetaData>
+         <MD>
+            <Name><![CDATA[Name]]></Name>
+            <Value><![CDATA[pairwise correlation]]></Value>
+         </MD>
+      </MetaData>
+      <Data></Data>
+   </DataArray>
+</GIFTI>
