@@ -38,8 +38,9 @@ if isnumeric(dpx)
         dpx = dpx ~= 0;
     elseif length(unique(dpx)) == 2
         dpx = logical(dpx);
+    elseif unique(dpx) == 0
     else
-        error('Gifti data input error: data are numeric but do not contain 2 or more unique values');
+        error(strcat('Gifti data input error: data are numeric but do not contain 2 or more unique values or entirely zeros','| unique_values = ',num2str(unique(dpx)),'| length = ',num2str(length(unique(dpx)))));
     end
 elseif islogical(dpx)
 else
@@ -54,7 +55,11 @@ for curr_comp = 1:numel(blocklimits)-1
     cc(rowind(blocklimits(curr_comp):blocklimits(curr_comp+1)-1)) = curr_comp;
 end
 dp_val = zeros(size(dpx));
-dp_val(dpx) = cc;
+if unique(dpx) == 0
+display('no clusters detected')
+else
+    dp_val(dpx) = cc;
+end
 if isdeployed
     if(size(dp_val,2) > 1)
         dp_val = transpose(dp_val);
