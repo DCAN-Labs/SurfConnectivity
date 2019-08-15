@@ -1,4 +1,4 @@
-%compiling RFSD code
+%compiling surf code
 addpath(genpath('/mnt/max/shared/code/external/utilities/Matlab_CIFTI'))
 addpath(genpath('/mnt/max/shared/code/internal/utilities/CIFTI/'))
 addpath(genpath('/mnt/max/shared/code/external/utilities/gifti-1.6'))
